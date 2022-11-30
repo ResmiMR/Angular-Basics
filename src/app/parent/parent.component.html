@@ -1,0 +1,23 @@
+<p>parent </p>
+
+<app-child *ngFor="let country of countryList" [country]="country"  
+(selectedCountryName) = "onChildClick($event)"
+
+></app-child>
+
+<br>
+<h3>Selected country is : {{selCountryFromClient}}</h3>
+
+
+<div *ngFor="let country of countryList">{{country}}</div>
+
+<ng-container *ngIf="showValue">This is true condition</ng-container>
+
+<ng-container [ngSwitch]="selOption">
+<div *ngSwitchCase="'first'">First Div</div>
+<div *ngSwitchCase="'second'">Second Div</div>
+<div *ngSwitchCase="'third'">Third Div</div>
+<div *ngSwitchDefault>Default Div</div>
+</ng-container>
+
+<label appCustom> this is lable for custom directive</label>

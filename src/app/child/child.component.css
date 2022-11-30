@@ -1,0 +1,12 @@
+.isActive{
+    font-style: italic;
+    color: chartreuse;
+}
+
+.show{
+    display: block;
+}
+
+.hide{
+    display: none;
+}
